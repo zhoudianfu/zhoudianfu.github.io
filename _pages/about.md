@@ -13,7 +13,8 @@ redirect_from:
 Male | 21 years old | Han Nationality | Member of the CPC
 
 **Self-Evaluation:** Proactive and results-oriented with a strong drive. Solid foundation in mathematics and physics, strong learning ability, with good project-based and research experience.
-**Interest:**Large Language Models and Reinforcement Learning,Large Language Model Security
+
+**Interest:** Large Language Models and Reinforcement Learning,Large Language Model Security
 ---
 
 ## Education
