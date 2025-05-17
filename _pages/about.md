@@ -31,7 +31,6 @@ Male | 21 years old | Han Nationality | Member of the CPC
 ---
 
 ## Education
-
 ### Nanjing University of Aeronautics and Astronautics (NUAA) · College of Computer Science and Technology / School of Software
 
 *   **Degree & Major:** Undergraduate    Information Security
@@ -46,7 +45,6 @@ Male | 21 years old | Han Nationality | Member of the CPC
 ---
 
 ## Project Experience
-
 ### Research on Cross-Domain Recommendation with Privacy Protection
 
 *   **Role:** Project Lead, Primary Contributor
