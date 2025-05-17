@@ -44,11 +44,13 @@ Male | 21 years old | Han Nationality | Member of the CPC
 *   **Duration:** Apr 2024 -- Apr 2025
 **Project Overview:**
 This project aims to address privacy issues in Cross-Domain Recommendation (CDR) using a two-stage privacy-preserving CDR framework. The first stage is data migration, and the second is cross-domain recommendation. Stage one considers two migration methods following differential privacy: Johnson-Lindenstrauss Transform (JLT) and Sparse JLT (SJLT) for further processing sparse data. These methods protect data privacy while maintaining user similarity for collaborative filtering, ensuring both differential privacy and utility. In stage two, the target domain utilizes its original data and the privacy-preserved rating data received from the source domain to build a cross-domain recommendation model. A deep autoencoder is used to reconstruct user embeddings from the source domain, and an embedding alignment module facilitates knowledge transfer from the source to the target domain, ultimately generating recommendations by integrating source domain data.
+
 **Responsibilities:**
 *   Overall planning and coordination for the team.
 *   Literature review.
 *   Algorithm design and framework development.
 *   Conclusion summarization and report writing.
+
 **Achievements:**
 *   Obtained one software copyright certificate.
 
@@ -59,10 +61,12 @@ This project aims to address privacy issues in Cross-Domain Recommendation (CDR)
 *   **Duration:** Mar 2025 -- Present
 **Project Overview:**
 This project involves developing a cross-platform system for detecting and blocking harmful content in videos, primarily focusing on identifying and blocking NSFW content in short videos. The front-end is developed using the Flutter framework, and the back-end is built with Python and Flask. The detection model relies on a custom-built image dataset (with five categories annotated) and fine-tunes models like ResNet-50 on video frames, achieving a classification accuracy of 92.9% on the test set. The system synchronously extracts text from videos (via OCR) and transcribes audio to text. By fine-tuning open-source LLM models, a text violation classifier is constructed. This is combined with image detection results for multi-modal fusion analysis, dynamically determining violation categories (single/composite) and triggering a tiered blocking mechanism. This system effectively reduces the false positive rate of traditional single-image detection methods, providing an efficient and accurate automated content moderation solution for short video platforms.
+
 **Responsibilities:**
 *   Literature review.
 *   Image classification model training.
 *   Back-end development.
+
 **Achievements:**
 *   A cross-platform harmful content detection and blocking system for short videos.
 ---
