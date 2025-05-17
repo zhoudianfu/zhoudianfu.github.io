@@ -21,7 +21,7 @@ Male | 21 years old | Han Nationality | Member of the CPC
 ## Education
 ### Nanjing University of Aeronautics and Astronautics (NUAA) · College of Computer Science and Technology / School of Software
 
-*   **Degree & Major:** Undergraduate    Information Security
+*   **Degree & Major:** Undergraduate   &   Information Security
 *   **Duration:** Sep 2022 -- Jun 2026 (Expected)
 *   **GPA:** 4.0/5.0, **Rank:** 7/78
 *   **Core Courses:**
