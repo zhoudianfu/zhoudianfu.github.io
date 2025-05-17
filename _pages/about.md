@@ -8,20 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-# Dianfu Zhou (周电富)
-
-
-
----
-
-**Contact Information**
-
-*   **Email:** [zdf223@nuaa.edu.cn](mailto:zdf223@nuaa.edu.cn)
-*   **Phone:** [+86 178 8396 8939](tel:+8617883968939)
-*   **Homepage:** [zhoudianfu.github.io](https://zhoudianfu.github.io/)
-
----
-
 ## Personal Profile
 
 Male | 21 years old | Han Nationality | Member of the CPC
