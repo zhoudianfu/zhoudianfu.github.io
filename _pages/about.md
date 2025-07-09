@@ -12,12 +12,12 @@ I'm a senior cs student at [Nanjing University of Aeronautics and Astronautics](
 
 Looking for a Research Internship opportunity!
 
-Technical Skills 🛠️ 
+**Technical Skills** 🛠️ 
 - Languages: Python, C++, SQL
 - Frameworks & tools: PyTorch, Docker, Git
 - Language Proficiency: CET-6: 536
 
-Honors & Awards ✨
+**Honors & Awards** ✨
 *   National Encouragement Scholarship (2 times) (National Level, 2023, 2024)
 *   NUAA Outstanding Student Scholarship (2 times) And NUAA "Sanhao" Student  (University Level, 2023, 2024)
 *   NUAA Academic Scholarship - First Prize (University Level, 2024)
