@@ -12,7 +12,7 @@ I'm a senior cs student at [Nanjing University of Aeronautics and Astronautics](
 
 Looking for a Research Internship opportunity!
 
-Technical Skills 🛠️
+Technical Skills 🛠️ <\br>
 Languages: Python, C++, SQL
 Frameworks & tools: PyTorch, Docker, Git
 Language Proficiency: CET-6: 536
