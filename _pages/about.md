@@ -18,6 +18,7 @@ Looking for a Research Internship opportunity!
 - Language Proficiency: CET-6: 536
 
 **Honors & Awards** ✨
-*   National Encouragement Scholarship (2 times) (National Level, 2023, 2024)
-*   NUAA Outstanding Student Scholarship (2 times) And NUAA "Sanhao" Student  (University Level, 2023, 2024)
-*   NUAA Academic Scholarship - First Prize (University Level, 2024)
+*   National Encouragement Scholarship (2 times) ,2023 and 2024
+*   Second Prize, 18th National College Students Information Security Competition (Team Leader),2025
+*   Third Prize, 14th "China Software Cup" College Student Software Design Competition,2025
+*   NUAA Outstanding Student Scholarship And NUAA "Sanhao" Student,2023 and 2024
