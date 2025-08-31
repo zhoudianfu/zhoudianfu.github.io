@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm a senior cs student at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/). My research interests span a wide range of topics, including Large Language Models (LLMs), Reinforcement Learning, and Recommendation system. 
+I'm a senior cs student at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/). My research interests span a wide range of topics, including Large Language Models (LLMs), Reinforcement Learning, and Recommendation system, LLM with safety. 
 
-Looking for a Research Internship opportunity!
+**Looking for a Research Internship opportunity!**
 
 **Technical Skills** 🛠️ 
 - Languages: Python, C++, SQL
@@ -19,6 +19,18 @@ Looking for a Research Internship opportunity!
 
 **Honors & Awards** ✨
 *   National Encouragement Scholarship (2 times) ,2023 and 2024
-*   Second Prize, 18th National College Students Information Security Competition (Team Leader),2025
+*   Second Prize, 18th National College Students Information Security Competition,2025
 *   Third Prize, 14th "China Software Cup" College Student Software Design Competition,2025
-*   NUAA Outstanding Student Scholarship And NUAA "Sanhao" Student,2023 and 2024
+*   NUAA Outstanding Student Scholarship And "Sanhao" Student,2023 and 2024
+
+**LLM Practice** 🤖
+-   Tokenizer: [GPT-4(cl100k_base) BPE tokenizer](https://github.com/ShallowU/MyTokenizer_Learning)
+-   Pre-training: [GPT-2(124M) from scratch](https://github.com/ShallowU/Reproduce-GPT2-124M)
+-   Triton(kernal fusion): todo
+-   SFT: todo
+-   RAG: todo
+-   RL(AlphaGo): todo
+
+**Fun Demo** 🚀
+-   [VideoGuard](https://github.com/ShallowU/VideoGuard): An AI-powered multi-modal content detection system for short videos. Detection across multiple categories (violence, adult content, smoking, etc.), and automated PDF report generation.
+-   DayKnows: todo
