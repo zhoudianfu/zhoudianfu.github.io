@@ -1,0 +1,39 @@
+---
+permalink: /zh/
+title: ""
+author_profile: true
+redirect_from: 
+  - /about_zh/
+  - /about_zh.html
+---
+
+我是一名即将进入[东南大学](https://www.seu.edu.cn/)的研究生（保研录取），目前是[南京航空航天大学](https://www.nuaa.edu.cn/)计算机科学与技术专业的大四学生。我的研究兴趣涵盖多个领域，包括大语言模型（LLMs）、强化学习、推荐系统和LLM安全。
+
+**目前正在为东南大学的研究生生涯做准备，积极寻求实习机会！**
+
+**技术技能** 🛠️ 
+- 编程语言：Python、C++、SQL
+- 框架与工具：PyTorch、Docker、Git
+- 语言能力：英语六级 536分
+
+**荣誉奖项** ✨
+*   国家励志奖学金（2次），2023年和2024年
+*   第十八届全国大学生信息安全竞赛作品赛二等奖，2025年
+*   第十四届"中国软件杯"大学生软件设计大赛三等奖，2025年
+*   南航优秀学生奖学金及"三好学生"，2023年和2024年
+
+**大语言模型实践** 🤖
+-   分词器：[GPT-4(cl100k_base) BPE分词器](https://github.com/ShallowU/MyTokenizer_Learning)
+-   预训练：[从零实现GPT-2(124M)](https://github.com/ShallowU/Reproduce-GPT2-124M)
+-   Triton（内核融合）：待完成
+-   监督微调（SFT）：待完成
+-   检索增强生成（RAG）：待完成
+-   强化学习（AlphaGo）：待完成
+
+**有趣的项目演示** 🚀
+-   [VideoGuard](https://github.com/ShallowU/VideoGuard)：基于AI的多模态短视频内容检测系统。可检测多种类别内容（暴力、成人内容、吸烟等），并自动生成PDF报告。
+-   DayKnows：待完成
+
+**联系方式** 📮
+- 📧 邮箱：zhoudianfu223@gmail.com
+- 🐙 GitHub：[ShallowU](https://github.com/ShallowU)
