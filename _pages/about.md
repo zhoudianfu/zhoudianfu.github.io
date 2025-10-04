@@ -7,11 +7,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-**Language**: [English](#) | [中文](/about_zh/)
+**Language**:  [中文](/about_zh/)
 
-I'm a senior cs student at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/). My research interests span a wide range of topics, including Large Language Models (LLMs), Reinforcement Learning, and Recommendation system, LLM with safety. 
+I'm a incoming graduate student at [Southeast University](https://www.seu.edu.cn/) (admitted through recommendation), now a senior cs student at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/). My research interests span a wide range of topics, including Large Language Models (LLMs), Reinforcement Learning, Recommendation Systems, and LLM Safety. 
 
-**Looking for a Research Internship opportunity!**
+**Currently preparing for graduate studies at SEU and actively seeking research collaboration opportunities!**
+
 
 **Technical Skills** 🛠️ 
 - Languages: Python, C++, SQL
