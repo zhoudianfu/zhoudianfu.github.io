@@ -20,9 +20,9 @@ tags:
 **配置环境视频与文档：**
 
 - 【新手从零使用mac】https://space.bilibili.com/49574614/lists/278381?type=season
-
 - 【Mac 开发环境基础配置】 https://www.bilibili.com/video/BV1ggJszHE3R/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
 - 【如何像极客一样使用你的Mac？分享下我的Mac工作流】 https://www.bilibili.com/video/BV1Yq8tzdEPU/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
+- https://arthals.ink/blog/initialize-mac
 - https://sourabhbajaj.com/mac-setup/
 
 按照上面顺序配置即可，大部分使用和环境都ok。
