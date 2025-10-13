@@ -35,4 +35,4 @@ tags:
 - 改快捷键，比如截屏的改自己设置的简单一点
 - 一些需要pro和会员的软件可以去macwk、mac618、xmac、appstorerent等等下载
 
-<img src="../images/blog1.png" alt="我下载的一些软件" style="zoom: 33%;" />
+<img src="/images/blog1.png" alt="我下载的一些软件" style="zoom: 50%;" />
