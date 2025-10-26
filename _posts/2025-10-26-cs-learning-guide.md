@@ -7,7 +7,6 @@ tags:
 
 ---
 
-# 中等大学生的计算机指北(仅供参考)
 
 > [!NOTE]
 > 本帖为个人经验，非面面俱到，请酌情参考！
@@ -75,7 +74,7 @@ tags:
 我很难命名这个小节标题，关于的是大学从零基础开始推荐动手的过程，加强动手能力，学习一些必要技能。网上已经有很多教程，而如果让我回到大一，我会这样推荐自己学：
 
 - 1.科学上网，会正确Google提问搜索。科学上网，而该如何搜索，如何正确提问等等，我推荐[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
-- 2.通过[missing- semester](https://missing-semester-cn.github.io/)学会基本命令行的使用。学会基本使用git、vim、linux基本命令等等。
+- 2.通过[missing- semester](https://missing-semester-cn.github.io/)学会基本命令行的使用。学会基本使用git、vim、linux基本命令。
 - 3.学会跟着教程动手配置vscode中c/c++的环境，简单GDB调试。大一学习c语言，网上搜索教程一步步配置。
 - 4.基本了解GitHub、Kaggle、Huggingface等，是什么平台 有什么用 以及怎么简单使用。
 - 5.学会用笔记软件管理做笔记或者写blog。笔记比如notion、obsidian或者typora都OK。
