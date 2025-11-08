@@ -4,9 +4,14 @@ layout: page
 
 # About Me
 
-<img src="/images/zdf_photo/me_and_grandmother.png" class="floatpic" alt="Ghibli-style photo of me and my grandmother">
+<!-- <img src="/images/zdf_photo/me_and_grandmother.png" class="floatpic" alt="Ghibli-style photo of me and my grandmother"> -->
 
-*<small>Ghibli-style photo of me and my grandmother</small>*
+<figure style="float: right; width: 280px; margin: 0 0 1em 1em;">
+  <img src="/images/zdf_photo/me_and_grandmother.png" alt="Ghibli-style photo of me and my grandmother" style="width:100%; border-radius:8px;">
+  <figcaption style="text-align:center; font-size:0.85em; color:#666; margin-top:8px;">
+    Ghibli-style photo of me and my grandmother
+  </figcaption>
+</figure>
 
 Here is **Dianfu Zhou**(周电富).<br>
 
