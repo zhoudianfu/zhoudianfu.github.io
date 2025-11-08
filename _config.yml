@@ -1,34 +1,34 @@
 # --------------------------------------------------
 #  BASIC SITE INFO
 # --------------------------------------------------
-title: Hanlin Cai   # Main site title (appears in browser tab & RSS)
-tagline: Here is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
-description: Here is personal website of Hanlin Cai, PhD Student at the University of Cambridge.  # Strongly recommended for SEO & social cards
+title: Dianfu Zhou   # Main site title (appears in browser tab & RSS)
+tagline: Here is personal website of Dianfu Zhou. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
+description: Here is personal website of Dianfu Zhou,now a NUAA Student and incoming M.S. Student at the Southern University.  # Strongly recommended for SEO & social cards
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
-url: https://caihanlin.com
+url: https://zhoudianfu.github.io
 
 # --------------------------------------------------
 #  AUTHOR / PROFILE DATA
 # --------------------------------------------------
 owner:
-  name: Hanlin Cai
-  avatar: hanlin.jpg
-  # bio: Dream big, stay positive, work hard, and enjoy the journey.
-  email: hc663@cam.ac.uk
+  name: Dianfu Zhou
+  avatar: touxiang.jpeg
+  bio: You are unique.
+  email: zdf223@nuaa.edu.cn
   # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter: lancecai2002
-  github: GuangLun2000
-  linkedin: hanlincai
-  scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
-  researchgate: https://www.researchgate.net/profile/Hanlin-Cai
-  zhihu: https://www.zhihu.com/people/chlire
-  xiaohongshu: 5c27848f0000000005030c6f
-  instagram: lancecai2002
-  bilibili: 594030035
+  # twitter: lancecai2002
+  github: ShallowU
+  # linkedin: hanlincai
+  # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
+  # researchgate: https://www.researchgate.net/profile/Hanlin-Cai
+  zhihu: https://www.zhihu.com/people/breeze-99-76-61
+  xiaohongshu: 64afe3f7000000001c029ded
+  # instagram: lancecai2002
+  bilibili: 502734231
   # facebook: caihanlin2002
   # lastfm:
   # tumblr:
@@ -37,7 +37,7 @@ owner:
 # --------------------------------------------------
 #  SEARCH-ENGINE VERIFICATION & ANALYTICS
 # --------------------------------------------------
-google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
+# google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 # bing_verify: ""    # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 # google_analytics: "G-XXXXXXX"                                 # GA-4 property ID
 
@@ -49,10 +49,10 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 links:
   - title: About Me
     url: /
-  - title: Publications
-    url: /publications/
-  - title: Services
-    url: /services/
+  # - title: Publications
+  #   url: /publications/
+  # - title: Services
+  #   url: /services/
   - title: Awards
     url: /awards/
   - title: Hobbies
@@ -101,7 +101,7 @@ kramdown:
 #  DISQUS COMMENT SYSTEM
 # --------------------------------------------------
 disqus:
-  shortname: lancecai
+  shortname: ShallowU
 
 
 # include: [".htaccess"]
