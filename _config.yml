@@ -3,7 +3,7 @@
 # --------------------------------------------------
 title: Dianfu Zhou   # Main site title (appears in browser tab & RSS)
 tagline: Here is personal website of Dianfu Zhou. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
-description: Here is personal website of Dianfu Zhou,now a NUAA Student and incoming M.S. Student at the Southern University.  # Strongly recommended for SEO & social cards
+description: Here is personal website of Dianfu Zhou,now a NUAA Student and incoming M.S. Student at the Southeast University.  # Strongly recommended for SEO & social cards
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -14,7 +14,7 @@ url: https://zhoudianfu.github.io
 # --------------------------------------------------
 owner:
   name: Dianfu Zhou
-  avatar: touxiang.jpeg
+  avatar: touxiang.jpg
   bio: You are unique.
   email: zdf223@nuaa.edu.cn
   # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
