@@ -4,15 +4,15 @@ layout: page
 
 # About Me
 
-<!-- <img src="https://caihanlin.com/caihanlin.jpg" class="floatpic"> -->
+<img src="/images/zdf_photo/me_and_grandmother.png" class="floatpic"> 
 
 Here is **Dianfu Zhou**(周电富).<br>
 
-I'm a incoming M.S. master student at [Southeast University](https://www.seu.edu.cn/) (ranked 1st in recommendation-exempt admission), now a senior student in information security at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/).
+I'm a incoming M.S. at [Southeast University](https://www.seu.edu.cn/) (ranked 1st in recommendation-exempt admission), now a senior student in information security at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/).
 
-During my undergraduate studies, I have a solid foundation in computer science and am passionate about large language models, large model security, AI in education.
+During my undergraduate studies, I acquire a solid foundation in computer science and am passionate about large language models, large model security, AI in education.
 
-If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - **zdf223 [at] nuaa.edu.cn**
+If you are interested in any aspect of me, I would love to chat and collaborate, please email me at  **zdf223 [at] nuaa.edu.cn**
 
 ---
 
