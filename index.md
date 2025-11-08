@@ -4,7 +4,9 @@ layout: page
 
 # About Me
 
-<img src="/images/zdf_photo/me_and_grandmother.png" class="floatpic"> 
+<img src="/images/zdf_photo/me_and_grandmother.png" class="floatpic" alt="Ghibli-style photo of me and my grandmother">
+
+*<small>Ghibli-style photo of me and my grandmother</small>*
 
 Here is **Dianfu Zhou**(周电富).<br>
 
