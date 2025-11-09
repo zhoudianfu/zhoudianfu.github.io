@@ -6,7 +6,7 @@ title: Awards
 
 ## Scholarships
 
-- Dec 2022-2025：**National Encouragement Scholarship**(3times)
+- Dec 2022-2025：**National Encouragement Scholarship**(3 times)
 - Apr 2025：NUAA First Prize Academic Scholarship 
 - Apr 2023：NUAA Second Prize Academic Scholarship
 - Dec 2025：NUAA Second Prize of Outstanding Scholarship
@@ -16,5 +16,5 @@ title: Awards
 ## Competitions
 
 - Aug 2025：**Second Prize** in 18th National College Students Information Security Competition
-- Aug 2025：Third Prize in 14th "China Software Cup" Competition
+- Aug 2025：Third Prize in 14th China Software Cup Competition
 <br>
