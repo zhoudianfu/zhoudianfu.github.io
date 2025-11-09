@@ -16,9 +16,14 @@ title: 周电富的个人主页
 > 分享我最喜欢的一段歌词，Adele 的《someone like you》
 >
 > Nothing compares
+> 
 > No worries or cares
+> 
 > Regrets and mistakes
+> 
 > They're memories made
+> 
 > Who would have known
+> 
 > How bittersweet,This would taste
 <br>
