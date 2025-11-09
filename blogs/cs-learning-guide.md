@@ -12,7 +12,7 @@ title: cs-learning-guide
 **前言：** 在大学生活中获得了很多他人的帮助，所以很早以前就想写写自己的这一路，分享出去，对他人有帮助的话那就很棒了。索性就在保研结束后，总结这平淡却艰辛的一路。至于网络上已经有很多大神的帖子，为什么我还要写的这个问题？我想的是，第一，大神的帖子大多适用于同为大神的人，我想写写一个普通的大学CSer。第二，不管有没有人看我都要写，这是我曾经定好了的。如果你有兴趣并且也有时间的话，不妨继续往下看！
 
 <br>首先推荐一份计算机指南：https://csdiy.wiki/ （英语和实践不错的童鞋强烈推荐！）
-<br>一位北大同学的整理：
+<br>推荐北大同学的整理入门书籍：https://github.com/ZangXuanyi/getting-started-handout
 
 
 ## 本人情况
@@ -123,4 +123,7 @@ title: cs-learning-guide
 
 ​	最后感谢你能看到最后，祝好！
 
-  
+<br>
+<center>
+<img src="/blogs/cs-learning-guide.assets/judge-you.jpg" alt="自我评价" >
+</center>
