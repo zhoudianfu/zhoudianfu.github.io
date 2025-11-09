@@ -47,7 +47,7 @@ owner:
 #  `external: true` opens the link in a new tab.
 # --------------------------------------------------
 links:
-  - title: About Me
+  - title: About
     url: /
   # - title: Publications
   #   url: /publications/
