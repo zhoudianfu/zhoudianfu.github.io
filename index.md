@@ -37,10 +37,3 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 - AI In Education
 
 <br>
-<script src="https://utteranc.es/client.js"
-        repo="zhoudianfu/zhoudianfu.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
