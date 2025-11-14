@@ -4,52 +4,20 @@ permalink: /hobbies/index.html
 title: Hobbies
 ---
 
-> This page hasn’t been updated for a long time.
->
-> Over the past year, I’ve remained passionate about swimming, but the lack of convenient and decent swimming pools in Cambridge has been an inconvenience. As a result, I’ve been swimming less frequently and have gained some weight. If you’re also in Cambridge and interested in swimming, running, or cycling together, feel free to contact me!
-
 # Hobbies
 
-## Swimming & Surfing
+## Film & Series
 
 <div class="third">
-<img src="/images/swimming2.JPG">
-<img src="/images/swimming.JPG">
-<img src="/images/surfing1.JPG">
+<img src="/images/hobby-image/breakingbad1.jpg">
+<img src="/images/hobby-image/layer.jpg">
+<img src="/images/hobby-image/longseason.jpg">
 </div>
-<br>Swimming removes my worries, refreshes my body, and brings me courage to address any challenges. I extremely enjoy the feeling of being immersed in the water. Besides, I am a member of the Swimming Team at Fuzhou University, where I meet many sincere friends. I have reached **China National Second-level athlete Standard** in 50m breaststroke and won **Five Gold Medals** during my 15-year swimming career. Recently, I am also keen on surfing.
+<br>I've been a dedicated movie buff since middle school, making it a rule to watch at least one good film every single week.I was so dedicated that by the time I even started university, I had already made my way through the entire Douban Top 250 list. For me, movies are complete works of art. They broaden my horizons and introduce me to countless different lifestyles I'd never see otherwise.On top of movies, I'm a huge fan of TV series. Shows like Breaking Bad, Better Call Saul, and The Long Season are my absolute favorites! I’ve watched the majority of popular American and British series out there, and it's been such a blast.If you love TV and film as much as I do, feel free to reach out! I'd love to chat and discuss our favorite shows.
 
-## Workshop
+## Geography
+<br>Geography has been my absolute favorite subject ever since middle school. I was always the class's geography representative, and I consistently aced my exams—often getting full marks and ranking first in my entire grade.I'll never forget this one time after a big exam, my teacher was grading and found a 99-point paper. They were so shocked that they immediately ripped off the sealed name cover to see who it was—and it was mine, haha!My teacher would often have me go to the front to draw maps on the board and explain exam questions to the class. Back then, I could draw the entire map of China purely from memory! (I'm a bit rusty now, sadly 😭).
 
-<div class="third">
-<img src="/images/prelection1.JPG">
-<img src="/images/speech1.JPG">
-<img src="/images/speech3.JPG">
-</div>
-<br>There must be something truly magical about standing on stage to give a fantastic speech, which considerably lifts my spirits and energizes my entire body. If you desire to master a specific knowledge in depth, just give a prelection. If you can explain to others for complete understanding, you are already an expert. I really enjoy the accomplishment of imparting my knowledge to others, so what I strive for is to be **a student's favorite professor** at the [best universities in my hometown].
-
-[best universities in my hometown]:https://www.fzu.edu.cn/
+But my interest was always more than just grades; it's a genuine passion. I love exploring different terrains and, even more, human geography—the unique cultures and customs that shape every single place.I ended up choosing the science track in high school, so I didn't get to study geography as formally after that. But that passion never went away.In my free time, I love flipping through Chinese National Geography and National Geographic magazine. The landscapes they capture are just absolutely stunning!I haven't had the chance to travel abroad yet, but my dream destinations are at the top of my list: Iceland, Yosemite National Park, and Melbourne. I truly hope I'll get to see them with my own eyes one day!
 
 
-## Past Hobbies
-
-I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently.
-
-## My Cat
-
-She is my love. Her name is Qbao (Q宝).
-
-<div>
-<img src="/images/cat.JPG">
-</div>
-<br>
-
-## Chat with me
-
-**Jan 2023:** I have set up the [online-coffee-time](https://calendly.com/lancecai/meet-with-lance) (Inspired by [Shangzhe Wu](https://elliottwu.com/)). Welcome to chat with me!
-
-<!-- Calendly inline widget begin -->
-
-<div class="calendly-inline-widget" data-url="https://calendly.com/lancecai/meet-with-lance" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
