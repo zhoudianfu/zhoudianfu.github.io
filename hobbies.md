@@ -10,7 +10,7 @@ title: Hobbies
 
 <div class="third">
 <img src="/images/hobby-image/breakingbad1.jpg">
-<img src="/images/hobby-image/layer2.jpg" >
+<img src="/images/hobby-image/layer1.jpg" >
 <img src="/images/hobby-image/longseason.jpg">
 </div>
 <br>I've been a dedicated movie buff since middle school, making it a rule to watch at least one good film every single week.I was so dedicated that by the time I even started university, I had already made my way through the entire Douban Top 250 list. For me, movies are complete works of art. They broaden my horizons and introduce me to countless different lifestyles I'd never see otherwise.On top of movies, I'm a huge fan of TV series. Shows like Breaking Bad, Better Call Saul, and The Long Season are my absolute favorites! I’ve watched the majority of popular American and British series out there, and it's been such a blast.If you love TV and film as much as I do, feel free to reach out! I'd love to chat and discuss our favorite shows.
