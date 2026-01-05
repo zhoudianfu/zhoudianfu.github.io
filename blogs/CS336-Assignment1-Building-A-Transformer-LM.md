@@ -135,9 +135,9 @@ def train_bpe(input_path,vocab_size,special_tokens):
 
 ### 2.如何构建一个tokenizer类用于token与string之间转换？
 
-**前置知识：**cls from file load, 贪心合并
+**前置知识** cls from file load, 贪心合并
 
-**整体思路：**
+**整体思路**
 
 encode：处理special_token，Pre-tokenize (预分词)，Apply the merges (应用合并规则)
 
@@ -532,6 +532,7 @@ def cross_entropy(logits,targets):
 
 **优化器**
 
+```
 SGD (2012)
   ↓ 问题：收敛速度慢，容易陷入局部极值
   ↓
@@ -547,6 +548,7 @@ RMSProp (2012, Hinton)
 Adam (2014) = Momentum + RMSProp + 偏差修正
   ↓
 AdamW (2019) = Adam + 正确的权重衰减分离
+```
 
 `Momentum`
 
