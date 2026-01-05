@@ -795,6 +795,7 @@ def load_checkpoint(
                                                ↓
                                           梯度 → 裁剪 → AdamW更新step
 ```
+框架流程图：
 ![training-process](/blogs/cs336-assignment1.assets/training-process.png)
 
 
