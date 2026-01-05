@@ -1,4 +1,4 @@
-# CS336-Assignment1-Building-A-Transformer-LM
+# CS336-Assignment1
 
 ## Targets
 
