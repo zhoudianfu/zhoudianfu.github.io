@@ -795,7 +795,7 @@ def load_checkpoint(
                                                ↓
                                           梯度 → 裁剪 → AdamW更新step
 ```
-![traing-process](/blogs/cs336-assignment1.assets/training-process.png)
+![training-process](/blogs/cs336-assignment1.assets/training-process.png)
 
 
 ## 6.Generating text部分
