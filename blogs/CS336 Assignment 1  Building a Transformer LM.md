@@ -12,9 +12,9 @@
 
 ### 1.如何实现bpe算法并用数据训练一个tokenizer？
 
-**前置知识：**Unicode，UTF-8，不同的分词器选择：词级(word)、字符级(character) 、字节级(byte) 、子词级(subword)，正则表达式，特殊标记。
+**前置知识** Unicode，UTF-8，不同的分词器选择：词级(word)、字符级(character) 、字节级(byte) 、子词级(subword)，正则表达式，特殊标记。
 
-**整体思路：**三步：初始化、预分词、迭代合并。
+**整体思路** 三步：初始化、预分词、迭代合并。
 
 初始化：256个基础字节和special tokens。
 
@@ -532,6 +532,7 @@ def cross_entropy(logits,targets):
 
 **优化器**
 
+```
 SGD (2012)
   ↓ 问题：收敛速度慢，容易陷入局部极值
   ↓
@@ -547,6 +548,7 @@ RMSProp (2012, Hinton)
 Adam (2014) = Momentum + RMSProp + 偏差修正
   ↓
 AdamW (2019) = Adam + 正确的权重衰减分离
+```
 
 `Momentum`
 
@@ -1025,7 +1027,7 @@ cross_entropy实现:使用gather后维度还是二维需要降维，否则会产
 
 | random get batch                                        | sequence batch iterator                                     |
 | ------------------------------------------------------- | ----------------------------------------------------------- |
-| ![random_data](/Users/shallowu/Desktop/random_data.png) | ![sequence_data](/Users/shallowu/Desktop/sequence_data.png) |
+| ![random_data](/blogs/cs336-assignment1.assets/random_data.png) | ![sequence_data](/blogs/cs336-assignment1.assets/sequence_data.png) |
 
 可以看到随机的取训练很稳定，而按顺序取却幅度很大。
 BatchIterator 的顺序读取特性：
