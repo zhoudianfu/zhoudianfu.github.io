@@ -7,7 +7,7 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 1月
-- [CS336 Assignment 1 : Building a Transformer LM](https://zhoudianfu.github.io/blogs/CS336-Assignment1-Building-A-Transformer-LM/)<br>
+- [CS336-Assignment1](https://zhoudianfu.github.io/blogs/CS336-Assignment1/)<br>
 
 ### 2025 10月
 
