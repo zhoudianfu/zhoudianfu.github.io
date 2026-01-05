@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/cs336-assignment1/index.html
+title: CS336-Assignment1
+---
+
 # CS336-Assignment1
 
 ## Targets
