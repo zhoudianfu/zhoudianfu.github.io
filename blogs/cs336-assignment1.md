@@ -18,7 +18,7 @@ title: CS336-Assignment1
 
 ### 1.如何实现bpe算法并用数据训练一个tokenizer？
 
-**前置知识** Unicode，UTF-8，不同的分词器选择：词级(word)、字符级(character) 、字节级(byte) 、子词级(subword)，正则表达式，特殊标记。
+**前置知识** Unicode，UTF-8，分词器选择：词级(word)、字符级(character) 、字节级(byte) 、子词级(subword)，正则表达式，特殊标记。
 
 **整体思路** 三步：初始化、预分词、迭代合并。
 
@@ -26,11 +26,11 @@ title: CS336-Assignment1
 
 预分词：使用正则表达式将一篇篇文档里的句子分成一个个chunk，每个chunk里应用bpe算法合并。eg：预分词的作用就是先进行一次清晰的切分, 告诉BPE：“goes 是一个独立的单元,’.‘是另一个独立的单元, 可以在goes 内部进行合并, 但绝对不能把goes的尾巴和. 合在一起。
 
-迭代合并：频率最高的字节对，频率相同时, 采用选择字典序更大的对优先的原则即排在后面tokenid更大的先合并。
+迭代合并：频率最高的字节对，频率相同时, 采用选择字典序更大的对优先的原则即排在后面token_id更大的先合并。
 
  **变量结构和含义示例：**
 
-```
+```python
 word_cnt = {
     (b'\x61', b'\x62', b'\x63'): 100,    # "abc" 出现 100 次
     (b'\x64', b'\x65'): 50               # "de" 出现 50 次
@@ -55,12 +55,12 @@ merges = [
 
  **输入输出**
 - 输入如下：
-input_path: str 
-vocab_size: int 
-special_tokens: list[str]
+input_path: str <br>
+vocab_size: int <br>
+special_tokens: list[str]<br>
 - 输出如下：
-vocab: dict[int, bytes] 
-merges: list[tuple[bytes, bytes]] 
+vocab: dict[int, bytes]<br> 
+merges: list[tuple[bytes, bytes]]<br> 
 
 **详细思路**
 拿到用special token分隔的数据文档后：
@@ -139,9 +139,9 @@ def train_bpe(input_path,vocab_size,special_tokens):
     return vocab, merges
 ```
 
-### 2.如何构建一个tokenizer类用于token与string之间转换？
+### 2.构建一个tokenizer类用于token与string之间转换？
 
-**前置知识** cls from file load, 贪心合并
+**前置知识**   cls from file load, 贪心合并
 
 **整体思路**
 
@@ -192,7 +192,7 @@ text = "hello"  # 字符串
 ```
 
 **详细思路**
-
+```
 encode:
 text = "hello, world <special_token> test "
   ↓ split_by_special (处理特殊 token)
@@ -214,7 +214,7 @@ bytes_list = [b'he', b'll', b'o']
 b'hello'
   ↓ .decode()
 text = "hello"
-
+```
 **代码**
 
 ```python
@@ -253,24 +253,20 @@ class Tokenizer:
 
     @classmethod
     def from_files(cls, vocab_filepath, merges_filepath, special_tokens=None):
+        """Loads from the clean Hex text format"""
         vocab = {}
-        with open(vocab_filepath, "r", encoding="utf-8") as f:
+        with open(f"{vocab_filepath}", 'r') as f:
             for line in f:
-                idx, tok_str = line.strip().split("\t", 1)
-                # 使用 ast.literal_eval 安全地解析字节字符串表示
-                # 例如：把 "b'\\x00'" 转换为 b'\x00'
-                vocab[int(idx)] = ast.literal_eval(tok_str)
+                idx, hx = line.strip().split('\t')
+                vocab[int(idx)] = bytes.fromhex(hx)
         
-        # 读取 merges
         merges = []
-        with open(merges_filepath, "r", encoding="utf-8") as f:
+        with open(f"{merges_filepath}", 'r') as f:
             for line in f:
-                parts = line.strip().split("\t", 1)
-                if len(parts) == 2:
-                    left = ast.literal_eval(parts[0])   # 将 "b'...'" 转为 bytes
-                    right = ast.literal_eval(parts[1])  # 将 "b'...'" 转为 bytes
-                    merges.append((left, right))
-        return cls(vocab=vocab,merges=merges,special_tokens=special_tokens)
+                p1, p2 = line.strip().split('\t')
+                merges.append((bytes.fromhex(p1), bytes.fromhex(p2)))
+                
+        return cls(vocab=vocab, merges=merges, special_tokens=special_tokens)
 
     def encode(self, text: str) -> list[int]:
         chunks = split_by_special(text, self.special_tokens, drop_special=False)
@@ -334,7 +330,7 @@ def encode_merged(text,merges,vocab_to_id):
     return tokens
 ```
 
-## 3.基本Tranformer Architecture从零手写实现
+## 3.Tranformer Architecture从零手写实现
 
 `Linear和Embedding层的实现`
 
@@ -359,9 +355,9 @@ def encode_merged(text,merges,vocab_to_id):
 
 RoPE 是一种将位置信息编码到 attention 机制中的方法，通过对 query 和 key 向量应用旋转变换，使得两个 token 的内积自然包含它们的相对位置信息，从而实现外推性和计算效率的双重优势。具体来说，对于位置 m 的 token，我们将其向量在每个 2D 子空间中旋转 mθi 角度，其中 θi与维度 i相关。由于旋转矩阵的乘法性质，位置 m 和 n 的内积会自然包含相对位置 (n−m)的旋转，而不是绝对位置
 
-- 1.初始化计算频率，用位置与频率外积获得位置频率表，再得到相应的cos表和sin表存起来，self.register_buffer使用
+- 初始化计算频率，用位置与频率外积获得位置频率表，再得到相应的cos表和sin表存起来，self.register_buffer使用
 
-- 2.传入X例如Query及其对应的token_position，需要对其进行旋转
+- 传入X例如Query及其对应的token_position，对其进行旋转
 
 - 首先将位置带入对应的cos表和sin表得到旋转角度，将X分为奇数维度和偶数维度两部分,两两对应如下公式旋转
 
@@ -375,11 +371,11 @@ RoPE 是一种将位置信息编码到 attention 机制中的方法，通过对 
 
 **为什么是上述计算公式呢？**
 
-讲RoPE很清楚的视频： https://www.bilibili.com/video/BV12x42127Pb/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
+讲RoPE很清楚的视频： [b站望舒同学](https://www.bilibili.com/video/BV12x42127Pb/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584)
 
 首先为什么需要位置编码？举例比如我爱你→ [”我”，“爱”，“你”] →经过transformer模型中最核心的attention计算后得到 [[1,2,3],[4,5,6],[7,8,9]]，但是你爱我→[”你”，“爱”，“我”]→经过计算[[7,8,9],[4,5,6],[1,2,3]]。发现这两者很相似，即“我” “你”在不同的句子计算后对应向量一样，只是位置不同。而本身我们希望是两者差别应该很大，每个字在不同的位置应该值就不同，而不是固定的。我们需要引入位置信息来进行计算，如何引入呢？
 
-最开始是加法式绝对位置编码（无学习），每个位置固定信息，正余弦位置信息直接加在原来的计算结果上。后来是绝对位置编码可学习，即用了一个embedding table来学习位置，跟token embedding一样。但是上述都无法满足外推性，更长的序列只能被截断。接下来就是相对位置编码，运用乘法式旋转来模拟相对位置。即$x_i^{\prime}=x_ie^{im\theta}$，旋转的思想，复数进行实现简化。
+最开始是加法式绝对位置编码（无学习），每个位置固定信息，正余弦位置信息直接加在原来的计算结果上。后来是绝对位置编码可学习，即用了一个embedding table来学习位置，跟token embedding一样。但是上述都无法满足外推性，更长的序列只能被截断。接下来就是相对位置编码，运用乘法式旋转来模拟相对位置。旋转的思想，复数进行实现简化。
 
 ![image-20260103143214675](/blogs/cs336-assignment1.assets/image-20260103143214675.png)
 
@@ -399,9 +395,9 @@ RoPE 是一种将位置信息编码到 attention 机制中的方法，通过对 
 
 ![image-20260103144948112](/blogs/cs336-assignment1.assets/image-20260103144948112.png)
 
-进行计算的时候可以进行简化，我们可以发现对于偶数行位置0，2，4等，偶数位置就是`out_even=x_even*cos_pos-x_odd*sin_pos`。
+进行计算的时候可以进行简化，我们可以发现对于偶数行位置0，2，4等，偶数位置就是`out_even=x_even*cos_pos-x_odd*sin_pos`
 
-对于奇数位置则就是`out_odd=x_odd*cos_pos+x_even*sin_pos`。
+对于奇数位置则就是`out_odd=x_odd*cos_pos+x_even*sin_pos`
 
 当然工业界如llama实现的方式有一点差异，上述是两两配对，而llama是分为前半部分和后半部分。
 
@@ -725,7 +721,7 @@ class BatchIterator:
         return x, y
 ```
 
-当然官方实现的更加简洁，也就是使用随机的采样，而不是按顺序采样：
+官方实现的更加简洁，也就是使用随机的采样，而不是按顺序采样：
 
 ```python
 def get_batch(data,batch_size,context_length,device="cpu"):
@@ -799,85 +795,8 @@ def load_checkpoint(
                                                ↓
                                           梯度 → 裁剪 → AdamW更新step
 ```
+![traing-process](/blogs/cs336-assignment1.assets/training-process.png)
 
-```mermaid
-flowchart TD
-    Start([开始训练]) --> ParseArgs[解析命令行参数<br/>vocab_size, d_model, batch_size等]
-    ParseArgs --> DeviceCheck{检查设备}
-    DeviceCheck -->|CUDA可用| GPU[device = 'cuda']
-    DeviceCheck -->|MPS可用| MPS[device = 'mps']
-    DeviceCheck -->|都不可用| CPU[device = 'cpu']
-    
-    GPU --> Setup
-    MPS --> Setup
-    CPU --> Setup
-    
-    Setup[创建输出目录<br/>保存配置文件] --> InitModel[初始化模型<br/>TransformerLM<br/>4层, 512维, 16头]
-    
-    InitModel --> LoadData[加载数据<br/>train.npy mmap模式<br/>val.npy mmap模式]
-    
-    LoadData --> CreateIterator[创建BatchIterator<br/>batch_size=64<br/>context_length=256]
-    
-    CreateIterator --> InitOptim[初始化优化器<br/>AdamW<br/>max_lr=1e-3]
-    
-    InitOptim --> InitLogger[初始化日志<br/>TensorBoard Writer<br/>tqdm进度条]
-    
-    InitLogger --> LoopStart{step < total_iterations?<br/>20000步}
-    
-    LoopStart -->|否| SaveFinal[保存最终检查点<br/>checkpoint_final.pt]
-    SaveFinal --> End([训练结束<br/>打印总耗时])
-    
-    LoopStart -->|是| CalcLR[计算学习率<br/>Cosine Schedule<br/>Warmup 1000步]
-    
-    CalcLR --> UpdateLR[更新优化器学习率<br/>param_group lr = lr]
-    
-    UpdateLR --> GetBatch[获取训练批次<br/>x, y = iterator.get_batch<br/>shape: 64×256]
-    
-    GetBatch --> Forward[前向传播<br/>logits = model x<br/>shape: 64×256×10000]
-    
-    Forward --> CalcLoss[计算损失<br/>loss = cross_entropy logits, y<br/>标量]
-    
-    CalcLoss --> Backward[反向传播<br/>optimizer.zero_grad<br/>loss.backward]
-    
-    Backward --> ClipGrad[梯度裁剪<br/>max_norm = 5.0<br/>防止梯度爆炸]
-    
-    ClipGrad --> OptimStep[参数更新<br/>optimizer.step]
-    
-    OptimStep --> LogMetrics[记录指标<br/>loss, lr, grad_norm<br/>tokens_per_sec]
-    
-    LogMetrics --> CheckSave{step % 5000 == 0<br/>且 step > 0?}
-    
-    CheckSave -->|是| SaveCheckpoint[保存检查点<br/>checkpoint_step.pt<br/>model + optimizer + step]
-    CheckSave -->|否| CheckVal
-    SaveCheckpoint --> CheckVal
-    
-    CheckVal{step % 200 == 0?}
-    
-    CheckVal -->|是| ValMode[切换到评估模式<br/>model.eval]
-    ValMode --> ValLoop[验证循环 50次<br/>no_grad模式]
-    ValLoop --> GetValBatch[获取验证批次<br/>batch_size=32]
-    GetValBatch --> ValForward[验证前向传播<br/>logits = model x_val]
-    ValForward --> ValLoss[计算验证损失<br/>val_loss]
-    ValLoss --> CollectLoss[收集损失值<br/>val_losses.append]
-    CollectLoss --> ValCheck{完成50次?}
-    ValCheck -->|否| GetValBatch
-    ValCheck -->|是| AvgLoss[计算平均损失<br/>mean val_losses]
-    AvgLoss --> LogVal[记录验证指标<br/>TensorBoard]
-    LogVal --> TrainMode[切换回训练模式<br/>model.train]
-    TrainMode --> IncrStep
-    
-    CheckVal -->|否| IncrStep[step += 1<br/>更新进度条]
-    
-    IncrStep --> LoopStart
-    
-    style Start fill:#e1f5e1
-    style End fill:#ffe1e1
-    style Forward fill:#e1e5ff
-    style Backward fill:#ffe5e1
-    style SaveCheckpoint fill:#fff3e1
-    style ValLoop fill:#f0e1ff
-    style GetBatch fill:#e1f5ff
-```
 
 ## 6.Generating text部分
 
@@ -1073,3 +992,16 @@ model=torch.compile(model)
 - https://github.com/weiruihhh/cs336_note_and_hw
 - https://github.com/Sherlock1956/TransformerFromScratch
 - https://zhuanlan.zhihu.com/p/1935209292715241716
+## Leave a Message 欢迎留言
+
+<br>
+
+<script src="https://utteranc.es/client.js"
+        repo="zhoudianfu/zhoudianfu.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script> 
+
+<br>
