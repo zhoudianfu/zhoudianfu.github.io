@@ -7,6 +7,7 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 1月
+- [CS336-Assignment2](https://zhoudianfu.github.io/blogs/cs336-assignment2/)<br>
 - [CS336-Assignment1](https://zhoudianfu.github.io/blogs/cs336-assignment1/)<br>
 
 ### 2025 10月
