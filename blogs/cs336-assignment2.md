@@ -16,7 +16,7 @@ title: CS336-Assignment2
 
 ## Profiling
 
-### 1.如何测量所写代码的性能？一般时间和内存两方面
+### 1.如何测量所写代码的性能？时间和内存两方面
 
 推荐先读读这几篇高质量博客：
 
@@ -68,10 +68,10 @@ nvtx.range_pop()
 - 使用累加这种操作，需要高精度保存，使用autocast进行自动精度选择
 - 矩阵乘法可以使用fp16，而加法以及layernorm这种则需要fp32，loss以及梯度值为了精准也要fp32
 
-4. 测量memory使用
+4.测量memory使用
 
 ```
-4 # Start recording memory history.
+# Start recording memory history.
 5 torch.cuda.memory._record_memory_history(max_entries=1000000)
 7... # what you want to profile in your benchmarking script
 9 # Save a pickle file to be loaded by PyTorch's online tool.
@@ -82,13 +82,13 @@ nvtx.range_pop()
 
 5.torch.compile使用
 
-- 时间消耗与seq_len成平方比，compile类似c++提前编译运行优化。
+- 时间消耗与seq_len成平方比，compile类c++提前编译运行优化。
 
 ## FlashAttention2
 
-### 2.如何用triton写flash attention的前向传播和反向传播？
+### 2.用triton写flash attention的前向传播和反向传播？
 
-推荐先看b站rethinkfun的视频过一遍：【Flash Attention 为什么那么快？原理讲解】 
+推荐先看b站rethinkfun的视频过一遍：
 
 https://www.bilibili.com/video/BV1UT421k7rA/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
 
@@ -309,7 +309,7 @@ $\begin{aligned} & \mathbf{S}=\mathbf{QK}^\top/\sqrt{d} \\ \mathbf{P}_{ij} & =\e
 
 实验对比了两种 Flash Attention 实现：
 
-[我的colab实现完整优化测试结果链接](https://colab.research.google.com/drive/1CQtwWbOW2jj33R5mIZasAB6jR0e96WAH?usp=sharing)：包含完整benchmark运行结果
+[我的colab实现完整优化测试结果链接](https://colab.research.google.com/drive/1CQtwWbOW2jj33R5mIZasAB6jR0e96WAH?usp=sharing)：完整benchmark运行结果
 
 - **PyTorch 版本**：使用 torch.nn.functional.scaled_dot_product_attention（PyTorch 内置的优化实现）
 - **Triton 版本**：自己实现的 Flash Attention kernel
@@ -600,7 +600,7 @@ Running benchmark: seq_len=65536, d=32, dtype=torch.bfloat16
 
 基础：https://stanford-cs336.github.io/spring2025-lectures/?trace=var/traces/lecture_08.json
 
-b站视频推荐：【动画理解Pytorch 大模型分布式训练技术 DP，DDP，DeepSpeed ZeRO技术】 https://www.bilibili.com/video/BV1mm42137X8/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
+b站视频推荐： https://www.bilibili.com/video/BV1mm42137X8/?share_source=copy_web&vd_source=783046dd26b6d8ed3ae12d74958b0584
 
 先进行基本通信原语的理解和实现，了解ddp，FSDP,TP,PP,SP等差别，其实本质上是按维度划分并行。
 
@@ -640,7 +640,7 @@ self.world_size = dist.get_world_size()
 3. 对每一个参数（Parameter）触发 `dist.all_reduce`。
 4. 更新参数。
 
-**问题**：1.一个个参数通信，这样通信很多次，而每次启动通信都会开销。
+**问题**：1.一个个参数通信，通信多次，而每次启动通信都会开销。
 
 2.这造成了严重的 **GPU 闲置**。在反向传播计算每一层梯度时，网络带宽是空闲的；而等到最后通信时，计算单元（CUDA Cores）又是空闲的。这就像做饭时，非要切完所有菜才开始烧水，而不是边切菜边烧水。
 
@@ -770,6 +770,8 @@ When deciding what parallelism techniques to choose for your model, use these co
 **保存：** 记得只有 Rank 0 干杂活（打印/保存）。
 
 实际训练代码参考：https://github.com/karpathy/build-nanogpt
+
+<br>
 
 **FSDP：从 DDP 迁移到 FSDP2 的 CheckList**
 
