@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blogs/mac-overheating/index.html
-title: macbook air overheating solution 
+title: macbook-air-overheating-solution 
 ---
 
 ## macbook 闲置发烫解决
