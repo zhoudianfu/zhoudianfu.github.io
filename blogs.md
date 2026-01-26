@@ -7,7 +7,7 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 1月
-- [macbook 闲置发烫解决](https://zhoudianfu.github.io/blogs/macbook-air-overheating-solution/)<br>
+- [macbook闲置发烫解决](https://zhoudianfu.github.io/blogs/macbook-air-overheating-solution/)<br>
 - [CS336-Assignment2](https://zhoudianfu.github.io/blogs/cs336-assignment2/)<br>
 - [CS336-Assignment1](https://zhoudianfu.github.io/blogs/cs336-assignment1/)<br>
 
