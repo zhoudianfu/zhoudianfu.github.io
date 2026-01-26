@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/mac-overheating/index.html
+permalink: /blogs/macbook-air-overheating-solution/index.html
 title: macbook-air-overheating-solution 
 ---
 
