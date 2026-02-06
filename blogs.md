@@ -7,7 +7,7 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 2月
-- [CS336-Assignment3 - SFT, EI, GRPO](https://zhoudianfu.github.io/blogs/cs336-assignment3/)<br>
+- [CS336-Assignment5 - SFT, EI, GRPO](https://zhoudianfu.github.io/blogs/cs336-assignment5/)<br>
 
 ### 2026 1月
 - [MacBook闲置发烫解决](https://zhoudianfu.github.io/blogs/macbook-air-overheating-solution/)<br>
