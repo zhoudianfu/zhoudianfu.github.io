@@ -7,13 +7,13 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 1月
-- [macbook闲置发烫解决](https://zhoudianfu.github.io/blogs/macbook-air-overheating-solution/)<br>
-- [CS336-Assignment2](https://zhoudianfu.github.io/blogs/cs336-assignment2/)<br>
-- [CS336-Assignment1](https://zhoudianfu.github.io/blogs/cs336-assignment1/)<br>
+- [MacBook闲置发烫解决](https://zhoudianfu.github.io/blogs/macbook-air-overheating-solution/)<br>
+- [CS336-Assignment2 - FlashAttention2 Triton and DDP](https://zhoudianfu.github.io/blogs/cs336-assignment2/)<br>
+- [CS336-Assignment1 - Transformer Architecture and Pretrain](https://zhoudianfu.github.io/blogs/cs336-assignment1/)<br>
 
 ### 2025 10月
 
-- [计算机自学指北](https://zhoudianfu.github.io/blogs/cs-learning-guide/)<br>
+- [大学本科计算机自学指北](https://zhoudianfu.github.io/blogs/cs-learning-guide/)<br>
 - [从零配置mac开发环境](https://zhoudianfu.github.io/blogs/mac-setting-guide/)<br>
 
 <br>
