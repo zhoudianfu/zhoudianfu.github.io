@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/reproduce-gpt2-124M/index.html
+title: reproduce-gpt2-124M
+---
+
 # Reproduce GPT-2 124M复盘
 
 - 视频：[Let's reproduce GPT-2 (124M)](https://youtu.be/l8pRSuU81PU?si=5Qdn5qsFaRnlkVhd)
@@ -8,7 +14,7 @@
 
 | val-loss                                                     | helloswag-acc                                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![W&B Chart 2026_2_9 14_18_31](/Users/shallowu/Downloads/W&B Chart 2026_2_9 14_18_31.png) | ![W&B Chart 2026_2_9 14_19_06](/Users/shallowu/Downloads/W&B Chart 2026_2_9 14_19_06.png) |
+| ![W&B Chart 2026_2_9 14_18_31](/blogs/reproduce-gpt2-124M.assets/W&B Chart 2026_2_9 14_18_31.png) | ![W&B Chart 2026_2_9 14_19_06](/blogs/reproduce-gpt2-124M.assets/W&B Chart 2026_2_9 14_19_06.png) |
 
 
 
@@ -150,7 +156,7 @@ dist.all_reduce(loss_accum, op=dist.ReduceOp.AVG)
 
 - 1.FineWebEdu数据集质量更好，虽然只有10B token
 - 2.采用了更新型的RoPE、SwiGLU、RMSnorm公认优秀架构
-- 3.数据的load方式更友好
+- 3.shuffle全局数据的load方式更友好
 - 4.带预热的余弦调度衰减、梯度裁剪、优化器权值衰减、参数初始化技巧
 
 
@@ -161,15 +167,15 @@ dist.all_reduce(loss_accum, op=dist.ReduceOp.AVG)
 
 **描述**：在训练初期，我观察到 Loss 曲线存在严重的低频震荡现象。经过排查，发现这是由于**数据分布的非独立同分布（Non-I.I.D.）导致的。原始数据加载方式是按 Shard 顺序读取，同一 Shard 内的文本往往属于同一领域（如全是数学教材或全是小说），导致模型在切换 Shard 时发生灾难性遗忘（Catastrophic Forgetting）**或剧烈适应。
 
-**解决：**由于数据集的加载是连续按顺序的，按一个个shard的连续顺序。有些分片内容容易学习，loss下降。而有些学习困难，loss反而震荡上升。重写dataloader，随机打乱每个分片内文档的顺序。先打乱整个shards顺序，最后再打乱每个小的batch的index采集，即最后呈现的是 indices to (shard, position) tuples格式。
+**解决**：由于数据集的加载是连续按顺序的，按一个个shard的连续顺序。有些分片内容容易学习，loss下降。而有些学习困难，loss反而震荡上升。重写dataloader，随机打乱每个分片内文档的顺序。先打乱整个shards顺序，最后再打乱每个小的batch的index采集，即最后呈现的是 indices to (shard, position) tuples格式。
 
 重构了 DataLoader，实现了全局级别的动态 Shuffle。具体来说，我先构建了所有 Shards 中 Window 的全局索引，然后对索引进行随机打乱。为了平衡 I/O 性能，我利用了 numpy.memmap 配合 OS 的 Page Cache，既保证了数据的随机性（Decorrelation），又避免了频繁随机读盘导致的吞吐量下降。最终 Loss 曲线变得平滑，收敛速度明显加快
 
 ### 2.刚开始训练直接loss爆炸然后Nan
 
-**描述：**在模型层数加深时，我遇到了训练早期的梯度爆炸问题，导致 Loss 直接变为 NaN。这是深层 Transformer 的典型问题。在残差结构 $x_{l+1} = x_l + F(x_l)$ 中，随着层数 $L$ 的增加，残差流（Residual Stream）的方差会线性累积，导致输出层附近的激活值幅度过大，反向传播时梯度不稳定。
+**描述**：在模型层数加深时，我遇到了训练早期的梯度爆炸问题，导致 Loss 直接变为 NaN。这是深层 Transformer 的典型问题。在残差结构 $x_{l+1} = x_l + F(x_l)$ 中，随着层数 $L$ 的增加，残差流（Residual Stream）的方差会线性累积，导致输出层附近的激活值幅度过大，反向传播时梯度不稳定。
 
-**解决：**参数初始化时候，最重要就是在每个block里的投影层进行缩放，标准差使用`math.sqrt(2 * self.config.n_layer)`缩放，这样会抵消由于残差连接汇聚一次次的方差爆炸震荡，网络越深就越容易造成震荡导致爆炸。
+**解决**：参数初始化时候，最重要就是在每个block里的投影层进行缩放，标准差使用`math.sqrt(2 * self.config.n_layer)`缩放，这样会抵消由于残差连接汇聚一次次的方差爆炸震荡，网络越深就越容易造成震荡导致爆炸。
 
 我采用了 GPT-2 论文中的初始化策略（也是 Megatron-LM 的标准做法），对每个残差分支（Residual Branch）的输出权重（即 MLP 和 Attention 的 c_proj 层）进行缩放，缩放系数为 $1/\sqrt{2L}$。这有效地控制了信号在深层网络中的方差增长，使得模型在使用了 Pre-Norm 的结构下也能稳定启动训练
 
