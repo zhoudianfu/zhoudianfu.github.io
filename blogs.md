@@ -7,6 +7,7 @@ title: Blogs
 ## Chinese Blogs 中文博客
 
 ### 2026 2月
+- [reproduce-gpt2-124M复盘](https://zhoudianfu.github.io/blogs/reproduce-gpt2-124M/)<br>
 - [CS336-Assignment5 - SFT, EI, GRPO](https://zhoudianfu.github.io/blogs/cs336-assignment5/)<br>
 
 ### 2026 1月
