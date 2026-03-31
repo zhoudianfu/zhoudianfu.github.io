@@ -6,6 +6,9 @@ title: Blogs
 
 ## Chinese Blogs 中文博客
 
+### 2026 3月
+- [202603-feeling](https://zhoudianfu.github.io/blogs/202603-feeling/)<br>
+
 ### 2026 2月
 - [reproduce-gpt2-124M复盘](https://zhoudianfu.github.io/blogs/reproduce-gpt2-124M/)<br>
 - [CS336-Assignment5 - SFT, EI, GRPO](https://zhoudianfu.github.io/blogs/cs336-assignment5/)<br>
