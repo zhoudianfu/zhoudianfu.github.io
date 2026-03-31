@@ -34,4 +34,4 @@ title: 202603-feeling
 
 四月是谁的谎言呢？我想出去，想挣脱这铁笼，飞向远方，感受风的凉爽。
 
-![image-20260331141105628](/Users/shallowu/Library/Application Support/typora-user-images/image-20260331141105628.png)
+![image-20260331141105628](/blogs/202603-feeling/image-20260331141105628.png)
