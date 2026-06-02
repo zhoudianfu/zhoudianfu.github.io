@@ -25,9 +25,36 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ## Academic Background
 
-- **Sep 2026（As Expected):** Southeast University (M.S. CS, supervised by [Prof. Kai Dong](https://cs.seu.edu.cn/dk/main.htm))
-- **Sep 2022 - June 2026:** Nanjing University of Aeronautics and Astronautics (B.S. IS, supervised by [Prof. Shuai Xu](https://faculty.nuaa.edu.cn/xushuai/zh_CN/index.htm),[Prof. Juan Li](https://faculty.nuaa.edu.cn/lijuan/zh_CN/index.htm))
-
+<div class="edu-list">
+  <div class="edu-item">
+    <img src="/images/logos/seu.png" class="edu-logo" alt="Southeast University logo">
+    <div class="edu-text">
+      <strong>Sep 2026 (As Expected):</strong> Southeast University (M.S. CS, supervised by <a href="https://cs.seu.edu.cn/dk/main.htm">Prof. Kai Dong</a>)
+    </div>
+  </div>
+  <div class="edu-item">
+    <img src="/images/logos/nuaa.png" class="edu-logo" alt="NUAA logo">
+    <div class="edu-text">
+      <strong>Sep 2022 - June 2026:</strong> Nanjing University of Aeronautics and Astronautics (B.S. IS, supervised by <a href="https://faculty.nuaa.edu.cn/xushuai/zh_CN/index.htm">Prof. Shuai Xu</a>, <a href="https://faculty.nuaa.edu.cn/lijuan/zh_CN/index.htm">Prof. Juan Li</a>)
+    </div>
+  </div>
+</div>
+<style>
+.edu-list { margin: 1em 0; }
+.edu-item {
+  display: flex;
+  align-items: center;   /* logo 与文字垂直居中,想顶端对齐就改成 flex-start */
+  gap: 1.2em;
+  margin-bottom: 1.2em;
+}
+.edu-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;   /* 保持比例不变形 */
+  flex-shrink: 0;        /* 文字变长时 logo 不被压扁 */
+}
+.edu-text { flex: 1; line-height: 1.5; }
+</style>
 ---
 
 ## Research Interests
