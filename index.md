@@ -62,7 +62,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
   <div class="edu-item">
     <img src="/images/logos/vivo.png" class="edu-logo" alt="vivo logo">
     <div class="edu-text">
-      <strong>April 2026 - June 2026:</strong> vivo Inc. — Content Understanding Algorithm Engineer Intern<br>
+      April 2026 - June 2026: Vivo Inc. <br><strong>Content Understanding Algorithm Engineer Intern</strong><br>
       Developed low-quality mini-game detection and video highlight detection algorithms for vivo Video Platform.
     </div>
   </div>
