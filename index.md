@@ -75,6 +75,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 - Large Language Models
 - AI Security
 - AI In Education
+
 ---
 
 ## Personal Taste
