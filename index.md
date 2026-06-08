@@ -63,7 +63,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
     <img src="/images/logos/vivo.png" class="edu-logo" alt="vivo logo">
     <div class="edu-text">
       April 2026 - June 2026: Vivo Inc. <br><strong>Content Understanding Algorithm Engineer Intern</strong><br>
-      Developed low-quality mini-game detection and video highlight detection algorithms for vivo Video Platform.
+      Develope low-quality mini-game detection algorithms for vivo Video Platform.
     </div>
   </div>
 </div>
@@ -74,6 +74,26 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 - Large Language Models
 - AI Security
 - AI In Education
+---
+## Personal Taste
+
+<div class="taste-list">
+  <div class="taste-item">
+    <span class="taste-quality">Clean · Elegant · Intuitive</span>
+    <span class="taste-ref">— like Apple's design</span>
+  </div>
+  <div class="taste-item">
+    <span class="taste-quality">Lucid · Efficinet · Rigorous</span>
+    <span class="taste-ref">— like Andrej Karpathy's teaching</span>
+  </div>
+</div>
+
+<style>
+.taste-list { margin: 1em 0; }
+.taste-item { margin-bottom: 0.8em; line-height: 1.7; }
+.taste-quality { font-weight: 600; }
+.taste-ref { color: #888; }
+</style>
 
 <br>
 
