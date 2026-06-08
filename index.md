@@ -69,12 +69,14 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 </div>
 
 ---
+
 ## Research Interests
 
 - Large Language Models
 - AI Security
 - AI In Education
 ---
+
 ## Personal Taste
 
 <div class="taste-list">
@@ -83,7 +85,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
     <span class="taste-ref">— like Apple's design</span>
   </div>
   <div class="taste-item">
-    <span class="taste-quality">Lucid · Efficinet · Rigorous</span>
+    <span class="taste-quality">Lucid · Efficinet · Simple</span>
     <span class="taste-ref">— like Andrej Karpathy's teaching</span>
   </div>
 </div>
