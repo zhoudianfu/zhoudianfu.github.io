@@ -15,7 +15,7 @@ layout: page
 
 Here is **Dianfu Zhou**(周电富).<br>
 
-I'm a incoming M.S. at [Southeast University](https://www.seu.edu.cn/) (ranked 1st in recommendation-exempt admission), now a senior student in information security at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/).
+I'm an incoming M.S. at [Southeast University](https://www.seu.edu.cn/) (ranked 1st in recommendation-exempt admission), now a senior student in information security at [Nanjing University of Aeronautics and Astronautics](https://www.nuaa.edu.cn/).
 
 During my undergraduate studies, I acquire a solid foundation in computer science and am passionate about large language models, large model security, AI in education.
 
@@ -63,7 +63,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
     <img src="/images/logos/vivo.png" class="edu-logo" alt="vivo logo">
     <div class="edu-text">
       April 2026 - June 2026: Vivo Inc. <br><strong>Content Understanding Algorithm Engineer Intern</strong><br>
-      Develope low-quality mini-game detection algorithms for vivo Video Platform.
+      Develop low-quality mini-game detection algorithms for vivo Video Platform.
     </div>
   </div>
 </div>
@@ -86,7 +86,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
     <span class="taste-ref">— like Apple's design</span>
   </div>
   <div class="taste-item">
-    <span class="taste-quality">Lucid · Efficinet · Simple</span>
+    <span class="taste-quality">Lucid · Efficient · Simple</span>
     <span class="taste-ref">— like Andrej Karpathy's teaching</span>
   </div>
 </div>
