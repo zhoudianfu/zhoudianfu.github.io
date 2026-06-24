@@ -6,6 +6,9 @@ title: Blogs
 
 ## Chinese Blogs 中文博客
 
+### 2026 6月
+- [vivo第一段实习总结与感受](https://zhoudianfu.github.io/blogs/vivo-internship-summary/)<br>
+
 ### 2026 3月
 - [202603-feeling](https://zhoudianfu.github.io/blogs/202603-feeling/)<br>
 
