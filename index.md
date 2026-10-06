@@ -17,7 +17,7 @@ Here is **Dianfu Zhou**(周电富).<br>
 
 I'm a first-year M.S. student in [Computer Science and Engineering at Southeast University](https://cs.seu.edu.cn/), supervised by [Prof. Kai Dong](https://cs.seu.edu.cn/dk/main.htm).
 
-My current interests lie in large language models, AI security, and LLM systems. I am particularly interested in understanding how modern AI systems can be made more secure, reliable, and efficient.
+My current interests lie in large language models, AI security, and LLM systems. I am particularly interested in understanding how modern AI systems can be made more secure, reliable, efficient.
 
 If you are interested in any aspect of me, I would love to chat and collaborate, please email me at  **zhoudianfu223 [at] gmail.com**
 
